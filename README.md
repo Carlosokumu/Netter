@@ -20,4 +20,5 @@ interface ApiService {
   fun fetchCurrencies(): List<Currency>
 }
 
+val apiService = retrofit.create(ApiService::class.java)
 
