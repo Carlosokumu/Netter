@@ -14,3 +14,10 @@ dependencies {
 
 ## Usage
 
+```kotlin
+interface ApiService {
+  @GET("/")
+  fun fetchCurrencies(): List<Currency>
+}
+
+
