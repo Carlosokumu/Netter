@@ -8,6 +8,6 @@ Add the dependency below into your **module**'s `build.gradle` file:
 
 ```gradle
 dependencies {
-    implementation "implementation 'com.github.Carlosokumu:Netter:v0.1.1"
+    implementation "com.github.Carlosokumu:Netter:v0.1.1"
 }
 ```
