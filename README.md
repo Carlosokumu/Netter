@@ -22,3 +22,8 @@ interface ApiService {
 
 val apiService = retrofit.create(ApiService::class.java)
 
+ suspend fun fetchCurrentWeather(cdispatcher: CoroutineDispatcher): ApiCallResult<List<Currency>> =
+        safeApiCall(ioDispatcher) {
+            return@safeApiCall apiService.fetchCurrencies()
+        }
+
