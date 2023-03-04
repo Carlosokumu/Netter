@@ -22,8 +22,8 @@ interface ApiService {
 
 val apiService = retrofit.create(ApiService::class.java)
 
- suspend fun fetchCurrencies(cdispatcher: CoroutineDispatcher): ApiCallResult<List<Currency>> = 
-         safeApiCall(ioDispatcher) {
+ suspend fun fetchCurrencies(dispatcher: CoroutineDispatcher): ApiCallResult<List<Currency>> = 
+         safeApiCall(dispatcher) {
             return@safeApiCall apiService.fetchCurrencies()
  }
 
