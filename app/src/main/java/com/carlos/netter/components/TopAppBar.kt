@@ -1,4 +1,4 @@
-package com.carlos.netter.ui.theme.designsystem.component
+package com.carlos.netter.components
 
 
 import androidx.compose.foundation.Image
