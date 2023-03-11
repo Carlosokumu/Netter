@@ -1,4 +1,4 @@
-package com.carlos.netter.ui.theme
+package com.carlos.netter.theme
 
 
 import androidx.compose.material3.Typography
