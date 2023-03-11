@@ -7,7 +7,7 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import com.carlos.netter.composables.CurrencyScreen
-import com.carlos.netter.ui.theme.designsystem.component.TopAppBar
+import com.carlos.netter.components.TopAppBar
 
 
 @OptIn(ExperimentalMaterial3Api::class)

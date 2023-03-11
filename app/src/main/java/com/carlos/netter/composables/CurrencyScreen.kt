@@ -12,7 +12,7 @@ import androidx.compose.ui.Modifier
 import com.carlos.netter.Db
 import com.carlos.netter.MainActivityUiState
 import com.carlos.netter.MainActivityViewModel
-import com.carlos.netter.ui.theme.designsystem.LoadingWheel
+import com.carlos.netter.components.LoadingWheel
 
 @Composable
 fun CurrencyScreen(modifier: Modifier = Modifier, mainActivityViewModel: MainActivityViewModel) {
