@@ -1,4 +1,4 @@
-package com.carlos.netter.ui.theme.designsystem
+package com.carlos.netter.components
 
 import androidx.compose.foundation.Canvas
 import androidx.compose.animation.animateColor
