@@ -5,17 +5,32 @@ plugins {
     id 'com.google.dagger.hilt.android'
 }
 
+
+// get property from local.properties
+def getProps(String propName) {
+    def propsFile = rootProject.file('local.properties')
+    if (propsFile.exists()) {
+        def props = new Properties()
+        props.load(new FileInputStream(propsFile))
+        return props[propName]
+    } else {
+        return "";
+    }
+}
+
+
 android {
     namespace 'com.carlos.net'
     compileSdk 33
+
 
     defaultConfig {
         minSdk 24
         targetSdk 33
 
+        buildConfigField("String", "API_KEY", getProps('API_KEY'))
+
     }
-
-
 }
 
 dependencies {
