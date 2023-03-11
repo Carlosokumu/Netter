@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Netter</string>
+
+    <string name="load_fail">⚠️ Something Went Wrong!</string>
+    <string name="loading">Loading</string>
+    <string name="flag">Country Flag</string>
 </resources>
