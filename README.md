@@ -71,6 +71,7 @@ Dark mode | Light Mode
  [Hilt-Dagger](https://developer.android.com/training/dependency-injection/hilt-android) -A dependency injection library for Android that reduces the boilerplate of doing manual dependency injection in your project.
 
  [Lifecycle](https://developer.android.com/topic/libraries/architecture/lifecycle) - Lifecycle-aware components perform actions in response to a change in the lifecycle status of another component, such as activities and fragments.
+ 
 [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel) -The ViewModel class is designed to store and manage UI-related data in a lifecycle conscious way.
 
 
