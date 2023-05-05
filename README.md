@@ -55,6 +55,6 @@ This sample app dispalys a list of   popular currencies from  [Fixer Api](https:
 
 Dark mode | Light Mode 
 --- | --- |
-<img src="https://github.com/Carlosokumu/Netter/blob/master/shots/dark.png" height="400" width="280"/> | <img src="https://github.com/Carlosokumu/Netter/blob/master/shots/light.png" height="400" width="200"/>
+<img src="https://github.com/Carlosokumu/Netter/blob/master/shots/dark.png" height="400" width="200"/> | <img src="https://github.com/Carlosokumu/Netter/blob/master/shots/light.png" height="400" width="200"/>
 
 
