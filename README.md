@@ -49,7 +49,7 @@ fun fetchCurrencies() = viewModelScope.launch {
     
 
  ##  Sample App
-This sample app dispalys a list of   popular currencies from  [Fixer Api]("https://api.apilayer.com/fixer/")  setting the Us dollar as the base currency.
+This sample app dispalys a list of   popular currencies from  [Fixer Api](https://api.apilayer.com/fixer/)  setting the Us dollar as the base currency.
 
 ### Screenshots
 
