@@ -15,15 +15,35 @@ dependencies {
 ## Usage
 
 ```kotlin
-interface ApiService {
-  @GET("/")
-  fun fetchCurrencies(): List<Currency>
+
+  //Api Service Class
+interface CurrencyApi {
+    @GET("latest")
+    suspend fun getCurrency(@Query("symbols") symbols: String, @Query("base") base: String): Currency
+
 }
 
-val apiService = retrofit.create(ApiService::class.java)
+//Repository
+override suspend fun fetchCurrencies(symbols: String, base: String): ApiCallResult<Currency> =
+        safeApiCall(ioDispatcher) {
+            return@safeApiCall currencyApi.getCurrency(symbols, base)
+        }
+        
+//ViewModel      
+fun fetchCurrencies() = viewModelScope.launch {
+        when (val result = mainRepository.fetchCurrencies(symbols = getSymbols(), base = "USD")) {
+            is ApiCallResult.ApiCallError -> {
+                //Handle  connectivity errors.
+            }
+            is ApiCallResult.Success -> {
+                //Handle success responses
 
- suspend fun fetchCurrencies(dispatcher: CoroutineDispatcher): ApiCallResult<List<Currency>> = 
-         safeApiCall(dispatcher) {
-            return@safeApiCall apiService.fetchCurrencies()
- }
+            }
+            is ApiCallResult.ServerError -> {
+               //Handle Server errors
+            }
+        }
+    }
+
+
 
