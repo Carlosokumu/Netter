@@ -49,5 +49,5 @@ fun fetchCurrencies() = viewModelScope.launch {
     
 
  ##  Sample App
-This sample app basically fetches data from  Fixer Api and shows how the Us dollar is performing in comparison to other popular  currencies.
+This sample app dispalys a list of   popular currencies from  Fixer Api and shows how the Us dollar is performing in comparison to them.
 
