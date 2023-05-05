@@ -58,6 +58,6 @@ Dark mode | Light Mode
 <img src="https://github.com/Carlosokumu/Netter/blob/master/shots/dark.png" height="400" width="200"/> | <img src="https://github.com/Carlosokumu/Netter/blob/master/shots/light.png" height="400" width="200"/>
 
 ## Technologies used
-    * [Kotlin](https://kotlinlang.org/) - Kotlin is a programming language that can run on JVM. Google has announced Kotlin as one of its officially supported programming languages in Android Studio; and the Android community is migrating at a pace from Java to Kotlin.
+  [Kotlin](https://kotlinlang.org/) - Kotlin is a programming language that can run on JVM. Google has announced Kotlin as one of its officially supported programming languages in Android Studio; and the Android community is migrating at a pace from Java to Kotlin.
 
 
