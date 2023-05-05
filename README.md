@@ -16,7 +16,7 @@ dependencies {
 
 ```kotlin
 
-//Api Service Class.
+  //Api Service Class
 interface CurrencyApi {
     @GET("latest")
     suspend fun getCurrency(@Query("symbols") symbols: String, @Query("base") base: String): Currency
@@ -33,22 +33,14 @@ override suspend fun fetchCurrencies(symbols: String, base: String): ApiCallResu
 fun fetchCurrencies() = viewModelScope.launch {
         when (val result = mainRepository.fetchCurrencies(symbols = getSymbols(), base = "USD")) {
             is ApiCallResult.ApiCallError -> {
-                _uiState.update {
-                    MainActivityUiState.LoadFailed
-                }
+                //Handle api call Error
             }
             is ApiCallResult.Success -> {
-                val currency = result.data
-                _uiState.update {
-                    MainActivityUiState.Success(currency)
-                }
+                //Handle sucess responses
 
             }
             is ApiCallResult.ServerError -> {
-                //To a user's perspective,a server error is a LoadFailure
-                _uiState.update {
-                    MainActivityUiState.LoadFailed
-                }
+               //Handle Server errors
             }
         }
     }
