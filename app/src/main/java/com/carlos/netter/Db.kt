@@ -9,47 +9,43 @@ object Db {
     fun getCurrencyInfoList(): List<CurrencyInfo> {
         var currencyInfoEuro = CurrencyInfo(
             currencyName = "Euro",
-            flagUrl = "https://countryflagsapi.com/png/eu",
+            flagUrl = "https://www.countryflagicons.com/SHINY/64/EU.png",
             "EUR"
         )
         var currencyInfoJapanese = CurrencyInfo(
             currencyName = "Japanese Yen",
-            flagUrl = "https://countryflagsapi.com/png/jp",
+            flagUrl = "https://www.countryflagicons.com/SHINY/64/JP.png",
             "JPY"
         )
         var currencyInfoBp = CurrencyInfo(
             currencyName = "British Pound Sterling",
-            flagUrl = "https://countryflagsapi.com/png/vgb",
+            flagUrl = "https://www.countryflagicons.com/SHINY/64/VG.png",
             "GBP"
         )
         var currencyInfoRn = CurrencyInfo(
             currencyName = "Renminbi",
-            flagUrl = "https://countryflagsapi.com/png/cn",
+            flagUrl = "https://www.countryflagicons.com/SHINY/64/CN.png",
             "CNY"
         )
         var currencyInfoAu = CurrencyInfo(
             currencyName = "Australian Dollar",
-            flagUrl = "https://countryflagsapi.com/png/au",
+            flagUrl = "https://www.countryflagicons.com/SHINY/64/AU.png",
             "AUD"
         )
-        var currencyInfoCanadianDollar = CurrencyInfo(
-            currencyName = "Canadian Dollar",
-            flagUrl = "https://countryflagsapi.com/png/ca",
-            "CAD"
-        )
+
         var currencyInfoSwiss = CurrencyInfo(
             currencyName = "Canadian Dollar",
-            flagUrl = "https://countryflagsapi.com/png/ch",
+            flagUrl = "https://www.countryflagicons.com/SHINY/64/CA.png",
             "CHF"
         )
         var currencyInfoHongDollar = CurrencyInfo(
             currencyName = "HongKong Dollar",
-            flagUrl = "https://countryflagsapi.com/png/hk",
+            flagUrl = "https://www.countryflagicons.com/SHINY/64/HK.png",
             "HKD"
         )
         var currencyInfoSing = CurrencyInfo(
             currencyName = "Singapore Dollar",
-            flagUrl = "https://countryflagsapi.com/png/sg",
+            flagUrl = "https://www.countryflagicons.com/SHINY/64/SG.png",
             currencySymbol = "SGD"
         )
 
@@ -63,7 +59,6 @@ object Db {
             add(currencyInfoBp)
             add(currencyInfoAu)
             add(currencyInfoRn)
-            add(currencyInfoCanadianDollar)
             add(currencyInfoSwiss)
             add(currencyInfoHongDollar)
             add(currencyInfoSing)

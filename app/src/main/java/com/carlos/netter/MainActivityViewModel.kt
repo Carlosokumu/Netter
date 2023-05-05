@@ -40,7 +40,7 @@ class MainActivityViewModel @Inject constructor(private val mainRepository: Main
 
             }
             is ApiCallResult.ServerError -> {
-                //To a user's perspective,a server error is a LoadFailure
+                //From a user's perspective,a server error is a LoadFailure
                 _uiState.update {
                     MainActivityUiState.LoadFailed
                 }
