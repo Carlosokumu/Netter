@@ -55,6 +55,6 @@ This sample app dispalys a list of   popular currencies from  [Fixer Api](https:
 
 Dark mode | Light Mode 
 --- | --- |
-<img src="https://github.com/Carlosokumu/Netter/blob/master/shots/dark.png" width="280"/> | <img src="https://github.com/Carlosokumu/Pokemen/blob/master/shots/Screenshot_20221002_051346.png" width="280"/>
+<img src="https://github.com/Carlosokumu/Netter/blob/master/shots/dark.png" width="200"/> | <img src="https://github.com/Carlosokumu/Pokemen/blob/master/shots/Screenshot_20221002_051346.png" width="200"/>
 
 
