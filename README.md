@@ -33,7 +33,7 @@ override suspend fun fetchCurrencies(symbols: String, base: String): ApiCallResu
 fun fetchCurrencies() = viewModelScope.launch {
         when (val result = mainRepository.fetchCurrencies(symbols = getSymbols(), base = "USD")) {
             is ApiCallResult.ApiCallError -> {
-                //Handle api call Error
+                //Handle  connectivity errors.
             }
             is ApiCallResult.Success -> {
                 //Handle sucess responses
