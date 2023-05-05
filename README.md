@@ -51,7 +51,7 @@ fun fetchCurrencies() = viewModelScope.launch {
  ##  Sample App
 This sample app dispalys a list of   popular currencies from  [Fixer Api](https://api.apilayer.com/fixer/)  setting the Us dollar as the base currency.
 
-### Screenshots
+**Screenshots**
 
 Dark mode | Light Mode 
 <img src="https://github.com/Carlosokumu/Pokemen/blob/master/shots/Screenshot_20221002_051214.png" width="280"/> | <img src="https://github.com/Carlosokumu/Pokemen/blob/master/shots/Screenshot_20221002_051346.png" width="280"/>
