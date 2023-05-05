@@ -36,7 +36,7 @@ fun fetchCurrencies() = viewModelScope.launch {
                 //Handle  connectivity errors.
             }
             is ApiCallResult.Success -> {
-                //Handle sucess responses
+                //Handle success responses
 
             }
             is ApiCallResult.ServerError -> {
